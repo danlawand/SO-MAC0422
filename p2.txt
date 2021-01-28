@@ -1,0 +1,12 @@
+R1:
+Dado o início à execução do programa as duas threads irão usar o mutex para realizar o protocolo de entrada na seção crítica (P(mutex)).
+Mas aquela que chegar primeiro, supondo Thread1, decresce o mutex em uma unidade, mudando o semáforo mutex para zero e poderá utilizar a seção crítica durante o tempo que for necessário para a sua tarefa. Com isso, nesse caso, a Thread2 irá acessar o protocolo de entrada com mutex igual a zero. 
+Assim, como mutex é zero, a Thread2 permanecerá em um loop até que mutex seja diferente de zero. Além disso a Thread em questão é posta para dormir e irá acordar apenas com um sinal do SO.
+Terminada a execução da tarefa da Thread1 na seção crítica, ela se encaminhará para o protocolo de saída (V(mutex)). Que incrementará uma unidade no mutex, assim, mutex agora equivale a um. E a Thread1 está em uma região não crítica.
+Com a mudança do mutex para um, a Thread2 sai do loop em que estava, decresce o mutex em uma unidade, mutex agora vale zero. A Thread2 sai do protocolo de entrada, entra na seção crítica e executa sua tarefa pelo tempo necessário.
+Com o mutex valendo zero, se alguma outra Thread chamar o protocolo de entrada, ela permanecerá em um loop até que mutex seja diferente de zero, esperando que a Thread2 saia da seção crítica e incremente o mutex ao valor um.
+Terminada a tarefa na seção crítica, a Thread2 se encaminha para o protocolo de saída, incrementa uma unidade no mutex, valendo um novamente. Agora a Thread2 entra na seção não crítica. E se havia alguma outra Thread querendo acessar a seção crítica,  agora consegue pois o mutex vale um e libera a Thread do loop, saindo do loop repete o mesmo ciclo. Garantindo que nenhuma Thread acesse a região crítica simultaneamente.
+
+
+R2:
+Tenho dedicado 6 horas extra aula para a disciplina MAC0422, ou seja, em torno de 10 horas semanais.

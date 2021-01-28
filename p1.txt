@@ -1,0 +1,7 @@
+DANIEL ANGELO ESTEVES LAWAND
+10297693
+
+R1: A forma ideal de compartilhamento de recursos para impressoras é a de compartilhamento por tempo, pois um processo que necessita imprimir uma quantidade de páginas precisa do recurso (impressora) só para ele durante a execução. Hipoteticamente, havendo diversos processos que necessitem do uso de uma impressora, cada processo irá ser executado em tempos diferentes, ou seja, o processo 1 irá executar na impressora e os outros estarão em uma "fila de espera". Quando o processo 1 terminar, o processo 1 sairá da fila de execução da impressora e o processo seguinte iniciará sua execução pela impressora, assim suscessivamente até todos os processos terem sido executados. 
+Caso o compartilhamento fosse por espaço a premissa é que cada processo tem seu espaço durante a sua execução, e como haveriam diversos processos querendo acessar a impressora simultaneamente, estes processos exigiriam a sua "parte da impressora". De modo lúdico é como que a impressora entendesse que deveria imprimir na mesma página pedaços de diferentes processos. Assim, o resultado daria um erro ou não sairia de acordo com o esperado.
+
+R2: Abstração foi o conceito que achei mais interessante e que não havia pensado em sua importância para a vida do programador e do usuário. Uma maneira bem sofisticada do Sistema Operacional condensar toda a complexidade de baixo nível é criando boas abstrações, implementando e gerenciando os objetos abstratos.

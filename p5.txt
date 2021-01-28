@@ -1,0 +1,11 @@
+R1: O objetivo da SWAP é oferecer uma solução para a escassez de memória e a grande quantidade de processos em execução simultânea.
+SWAP é muito útil no meu computador pessoal quando estou no Windows, especialmente jogando, vendo tutorial do jogo no Google Chrome e ainda usando o editor Atom para fazer algum ep.
+Mas quando estou no Ubuntu, a SWAP é pouco útil, pois como vemos na tabela a seguir, a SWAP está inteiramente livre e ainda há uma quantidade relativamente boa de memória disponível a ser utilizada.
+$ free
+              total       usada       livre    compart.  buff/cache  disponível
+Mem.:       8001300     3454872     2131336      426072     2415092     3846736
+Swap:       4000764           0     4000764
+
+(Comando free no Ubuntu com editor Atom aberto com várias abas, vídeo rodando no Chrome e firefox com vídeo rodando e com mais de 10 abas abertas).
+
+R2: Penso em trabalhar com Ciência da Computação e gostaria de ter uma experiência profissional/acadêmcia no exterior.

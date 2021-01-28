@@ -1,0 +1,32 @@
+R1:
+Suponha um disco com o tamanho de 30 blocos, inicialmente vazios. Sendo o primeiro bloco, o bloco zero e o último o bloco 29.
+Seja o arquivo "A", um arquivo que estou lidando e nesse momento dou o comando para salvar o conteúdo.
+O subsistema do sistema de arquivos irá procurar um espaço livre no disco que caiba todos os bytes do arquivo na sequência.
+Suponha que para o arquivo "A" seja necessário utilizar 4 blocos do disco. E que o subsistema escolheu os 4 primeiros blocos livres do disco.
+Assim, o arquivo "A" estará ocupando os blocos de zero a três do disco.
+Após isso, começo a lidar com o arquivo "B", dou o comando para salvar, para alocação desse arquivo, serão necessários a alocação de 3 blocos. O sistema de arquivos escolhe os três primeiros blocos livres senquencialmente, ou seja, os blocos de 4 a 6.
+Agora estou lidando com o arquivo "C", dou o comando para salvar, o sistema percebe que para alocar o arquivo "C" no disco serão necessários 6 blocos. O sistema escolhe o espaço vazio dos blocos 7 a 12.
+Após o arquivo "C", começo a editar o arquivo "D" e realizo o comando para salvar. O sistema percebe que serão necessários 5 blocos do disco para salvar o arquivo "D". E o sistema escolhe os blocos livres de 13 a 17.
+Depois, trabalho com o arquivo "E", e realizo o comando para salvar. O arquivo "E" exige a alocação de 8 blocos vazios do disco. O sistema de arquivos escolhe os blocos de 18 a 25 para salvar.
+Assim, temos o disco cheio dos blocos zero a 25. E vazio dos blocos 26 a 29.
+Agora, resolvo deletar o arquivo "B", assim libero os blocos de 4 a 6.
+Após isso, resolvo deletar o arquivo "D", o que libera os blocos de 13 a 17.
+Assim, tem espaços vazios entre os blocos 4 a 6, 13 a 17 e 26 a 29. Totalizando 12 blocos, mas que não estão sequencialmente juntos.
+Assim, na lida com um arquivo "F" que exigiria a alocação de 10 blocos, o sistema de arquivos não conseguiria alocar o arquivo "F", pois apesar de haver 12 blocos disponíveis eles não estão sequencialmente um ao lado do outro.
+Portanto, essa condição de haver "buracos" no disco e que não necessariamente irei conseguir usar esses espaços vazios para colocar outros arquivos, categoriza uma situação de fragmentação.
+
+R2:
+Eu escolheria permanecer remotamente. 
+E apenas para dar mais detalhes à minha resposta, gostaria de compartilhar minha opinião. Vejo que o ideal seria um mix de presencial com remoto, mas não sei como isso poderia ser. Vejo que após a adaptação à realidade do ensino remoto, meu aprendizado melhorou. Eu não perco mais 3 horas diárias em transporte público e 1 hora diária na fila do "bandejão", que estão sendo utilizadas para estudar e realizar atividades que me fazem bem (aprender violão, ler livros e etc.).
+Vejo que o benefício maior não é só o tempo, mas é a falta do estresse de precisar pegar transporte público lotado, de se preocupar se vai chegar a tempo da primeira aula e dentre outras coisas tão simples (como poder usar o banheiro tranquilamente sem se preocupar com a nojeita habitual).
+Mas ainda vejo os benefícios das atividades presenciais, como os grupos de extensão, ou um trabalho mais prático com o professor ou mesmo para o professor ter o feeling da turma, que online não é muito possível. 
+
+
+
+
+
+
+
+
+
+
